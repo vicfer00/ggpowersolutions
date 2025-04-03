@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | G&G Power Solutions</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- Placeholder for Header & Navbar -->
-    <div id="header"></div>
-
-    <div class="container mt-5">
-        <form>
+  
+  <!-- Load Header dynamically -->
+  <div id="header"></div>
+  
+  <!-- CONTACT US SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5">Contact Us</h1>
+      <div class="row">
+        <!-- Contact Form Column -->
+        <div class="col-md-6">
+          <h2 class="mb-4">Send Us a Message</h2>
+          <form>
             <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
+              <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
+              <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
             </div>
             <div class="mb-3">
-                <label for="phoneNumber" class="form-label">Phone Number</label>
-                <input type="phoneNumber" class="form-control" id="phoneNumber" placeholder="Your Phone Number">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
             </div>
             <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+              <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+              <textarea class="form-control" id="message" rows="5" placeholder="How can we be of service?" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
+            <button type="submit" class="btn btn-primary">Submit Message</button>
+          </form>
+        </div>
+        <!-- Contact Information Column -->
+        <div class="col-md-6">
+          <h2 class="mb-4">Other Ways to Contact Us</h2>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <p><strong>Email:</strong> <a href="mailto:info@gandgpower.com" class="text-decoration-none">contact@ggpowersolutions.com</a></p>
+          <!-- <p><strong>Address:</strong><br> 123 Main Street, Houston, TX 77002</p> -->
+          <p>Our team is available Monday through Friday, 8 AM - 5 PM. We strive to respond to all inquiries within 24 hours.</p>
+          <!-- Image Placeholder for Service Area -->
+          <div class="mt-4">
+            <img src="assets/images/dallas-ft-worth.jpg" alt="Dallas/Fort Worth Metroplex" class="img-fluid rounded">
+            <p class="text-muted mt-2 text-center">
+              Proudly servicing the Dallas/Fort Worth Metroplex and surrounding areas.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Placeholder for Footer -->
-    <div id="footer"></div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JavaScript to Load Header & Footer -->
-    <script>
-        function loadComponent(id, file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(data => document.getElementById(id).innerHTML = data);
-        }
-
-        loadComponent("header", "header.html");
-        loadComponent("footer", "footer.html");
-    </script>
-
+  </section>
+  
+  <!-- Load Footer dynamically -->
+  <div id="footer"></div>
+  
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript to Load Header & Footer -->
+  <script>
+    function loadComponent(id, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => document.getElementById(id).innerHTML = data);
+    }
+    loadComponent("header", "header.html");
+    loadComponent("footer", "footer.html");
+  </script>
 </body>
 </html>
-
-
