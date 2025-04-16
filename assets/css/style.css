@@ -1,3 +1,15 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+.gg-blue-bg {
+    background-color: #171C8F;
+}
+
+.gg-yellow-bg {
+    background-color: #FFB81C;
+}
+
+.gg-gray-bg {
+    background-color: #4B4F54;
+}
