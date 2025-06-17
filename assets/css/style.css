@@ -1,15 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 .gg-blue-bg {
-    background-color: #171C8F;
+  background-color: #171c8f;
 }
 
 .gg-yellow-bg {
-    background-color: #FFB81C;
+  background-color: #ffb81c;
 }
 
 .gg-gray-bg {
-    background-color: #4B4F54;
+  background-color: #4b4f54;
 }
+
+.hero {
+    /* full-width background with your image */
+    background: 
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('../images/commercial-restaurant-latino.jpg');
+    min-height: 60vh;        /* adjust to taste */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;           /* so .container vertically centers */
+  }
+  
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 200px; /* or whatever fits your design */
+  }
+  
+  html { scroll-behavior: smooth; }
+
+  @media (min-width: 992px) {
+    .hero { min-height: 75vh; }
+  }
+  @media (max-width: 576px) {
+    .hero { min-height: 50vh; }
+  }
+  
