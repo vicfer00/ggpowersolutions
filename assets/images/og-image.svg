@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#171c8f" />
+  <g transform="translate(60,60)">
+    <rect x="0" y="0" width="1080" height="510" rx="20" fill="#0f144a" />
+    <text x="540" y="220" font-family="Arial, Helvetica, sans-serif" font-size="64" fill="#ffffff" font-weight="700" text-anchor="middle">G&G Power Solutions</text>
+    <text x="540" y="300" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#ffb81c" text-anchor="middle">Commercial & Residential Electrical Services</text>
+    <text x="540" y="380" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#cbd5ff" text-anchor="middle">Licensed electricians • Dallas/Fort Worth</text>
+  </g>
+</svg>

@@ -54,3 +54,11 @@ body {
     .hero { min-height: 50vh; }
   }
   
+  /* Responsive logo sizing */
+  .site-logo { max-width: 180px; height: auto; }
+  @media (max-width:576px){ .site-logo{ max-width:120px } }
+
+  /* Accessible skip link */
+  .skip-link { position: absolute; left: -999px; top: auto; width:1px; height:1px; overflow:hidden; }
+  .skip-link:focus { position: static; left: 0; width: auto; height: auto; background: #000; color: #fff; padding: 8px; z-index: 1000; }
+  
